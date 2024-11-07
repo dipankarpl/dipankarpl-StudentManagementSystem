@@ -14,14 +14,29 @@ public class Student {
 
 	public Student(String name, int age, String studentId) {
 		super();
-		if (validateName(name)) {
+		if (validateName(name) && validateAge(age)) {
 			this.name = name;
-		}
-		if (validateAge(age)) {
 			this.age = age;
+			this.studentId = studentId;
+			courses = new ArrayList<>();
 		}
-		this.studentId = studentId;
-		courses = new ArrayList<String>();
+		
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public String getStudentId() {
+		return studentId;
+	}
+
+	public List<String> getCourses() {
+		return courses;
 	}
 
 	public void enrollCourse(String course) {

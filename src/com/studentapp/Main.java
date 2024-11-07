@@ -3,7 +3,6 @@ package com.studentapp;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("***** Student Management System *****");
 				
 		Student s1=new Student("Rahul Kuhad", 25, "S-25");

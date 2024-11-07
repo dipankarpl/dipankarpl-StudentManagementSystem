@@ -4,32 +4,22 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Scanner;
 
-public class Main2 {
+public class Main3 {
 	public static List<Student> studentList;
 
 	public static void main(String[] args) {
 		System.out.println("***** Student Management System *****");
 		studentList = new ArrayList<Student>();
 
-		Student s1 = new Student("Rahul Kuhad", 25, "S-25");
-		s1.enrollCourse("JAVA");
-		s1.enrollCourse("JAVA");
-		s1.enrollCourse("C#");
-
-		Student s2 = new Student("Rahul Dua", 21, "S-21");
-		s2.enrollCourse("JAVA");
-
-		Student s3 = new Student("Rahul Tanwar", 23, "S-23");
-		s3.enrollCourse("DSA");
-
-		studentList.add(s1);
-		studentList.add(s2);
-		studentList.add(s3);
-
-		Student result = findStudentByID("S-20");
-		System.out.println("Result: " + result);
-		sortByName();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter student name");
+		String name = scanner.next();
+		System.out.println("Name entered: " + name);
+		System.out.println("Enter student age");
+		int age = scanner.nextInt();
+		System.out.println("Age entered: " + age);
 	}
 
 	private static void sortByName() {
