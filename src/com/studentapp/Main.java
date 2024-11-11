@@ -92,7 +92,7 @@ public class Main {
 		studentList.add(newStudent);
 
 		while (true) {
-			System.out.println("Enter the course to be enrolled!!..Type DONE to exit");
+			System.out.println("Enter the course to be enrolled!!..Type DONE to exit :)");
 			String courseName = scanner2.next();
 			if (courseName.equalsIgnoreCase("done")) {
 				break;
